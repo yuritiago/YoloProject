@@ -1,4 +1,4 @@
-/* Estilos para o título principal */
+
 h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -6,7 +6,6 @@ h1 {
     text-align: center;
   }
   
-  /* Estilos para o parágrafo introdutório */
   p {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -14,7 +13,6 @@ h1 {
     text-align: justify;
   }
   
-  /* Estilos para o subtítulo */
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -23,7 +21,7 @@ h1 {
     text-transform: uppercase;
   }
   
-  /* Estilos para a lista de benefícios */
+
   ul {
     list-style-type: disc;
     margin-left: 3rem;
@@ -37,7 +35,6 @@ h1 {
     text-align: justify;
   }
   
-  /* Estilos para os links */
   a {
     color: #0099ff;
     text-decoration: none;
@@ -48,7 +45,6 @@ h1 {
     text-decoration: underline;
   }
   
-  /* Estilos para a imagem */
   img {
     display: block;
     margin: 0 auto;
