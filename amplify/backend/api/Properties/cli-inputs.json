@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "yoloproject0bf3dc85",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

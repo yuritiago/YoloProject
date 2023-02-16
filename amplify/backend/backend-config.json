@@ -1,0 +1,95 @@
+{
+  "api": {
+    "Properties": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "yoloproject0bf3dc85"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "dynamo381c3ac4Trigger62f01f5d": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamo381c3ac4"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "yoloproject0bf3dc85": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamo381c3ac4"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_dynamo381c3ac4Trigger62f01f5d_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dynamo381c3ac4Trigger62f01f5d"
+        }
+      ]
+    },
+    "AMPLIFY_function_dynamo381c3ac4Trigger62f01f5d_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dynamo381c3ac4Trigger62f01f5d"
+        }
+      ]
+    },
+    "AMPLIFY_function_yoloproject0bf3dc85_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "yoloproject0bf3dc85"
+        }
+      ]
+    },
+    "AMPLIFY_function_yoloproject0bf3dc85_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "yoloproject0bf3dc85"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dynamo381c3ac4": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

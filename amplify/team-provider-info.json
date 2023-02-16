@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-yoloproject-dev-15245-authRole",
+      "UnauthRoleArn": "arn:aws:iam::570282362734:role/amplify-yoloproject-dev-15245-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::570282362734:role/amplify-yoloproject-dev-15245-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-yoloproject-dev-15245-deployment",
+      "UnauthRoleName": "amplify-yoloproject-dev-15245-unauthRole",
+      "StackName": "amplify-yoloproject-dev-15245",
+      "StackId": "arn:aws:cloudformation:sa-east-1:570282362734:stack/amplify-yoloproject-dev-15245/c233e4a0-adb5-11ed-bdd0-021a2bcfaac4",
+      "AmplifyAppId": "d3avui7mxqsgyy"
+    },
+    "categories": {
+      "function": {
+        "yoloproject0bf3dc85": {
+          "deploymentBucketName": "amplify-yoloproject-dev-15245-deployment",
+          "s3Key": "amplify-builds/yoloproject0bf3dc85-614b5951377033494933-build.zip"
+        },
+        "dynamo381c3ac4Trigger62f01f5d": {
+          "deploymentBucketName": "amplify-yoloproject-dev-15245-deployment",
+          "s3Key": "amplify-builds/dynamo381c3ac4Trigger62f01f5d-7a4d70625341764b4137-build.zip"
+        }
+      },
+      "storage": {
+        "dynamo381c3ac4": {}
+      },
+      "api": {
+        "Properties": {}
+      }
+    }
+  }
+}
